@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.player1 {
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    background-color: purple;
+    margin-top: -25px;
+}
+
+.player2 {
+    background-color: deepskyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    background-size: cover;
+}
+
+.gamepad {
+    width: 150px;
+    height: 150px;
+    /*    background-color: aquamarine;*/
+   
+}
+
+.gamepad1 {
+    position: fixed;
+    bottom: -200px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    
+}
+
+.gamepad2 {
+    position: fixed;
+    bottom: -200px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #999;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.target {
+    width: 50px;
+    height: 50px;
+background-size: cover;
+background-image: url(coin.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    opacity: 0;
+}
+
+.scoreContainer{
+    width: 200px;
+    height: 100px;
+    background-color: #FFD700;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.scoreInner{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+.gamepadSwitcher{
+    width: 50px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.gamepadSwitcher img{
+    width: 30px;
+}
+
+.load{
+    background-image: url(loadmap.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.ship{
+    background-image: url(pirate.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    transition: 0.4s;
+    position: absolute;
+}
+.wheel{
+    background-image:url(ship-wheel.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    transition: 5s;
+}
+.loading{
+    margin-top: 28%;
+    margin-left: 47%;
+}
+.progress{
+    width: 25%;
+    height: 6%;
+    background-color: rgb(150, 129, 103);
+position: relative;
+right: 6%;
+top: 3%;
+border-radius: 2px;
+}
+.pers{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 196, 119);
+    transition: 1s;
+
+}
+.start{
+    width: 100%;
+    height: 100vh;
+    background-image: url(start.jpg);
+    background-size: cover;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 200px;
+}
+.tap{
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    transform: rotate(10deg);
+    font-size: 40px;
+    text-shadow: 0 2px 5px rgb(103, 96, 86);
+    user-select: none;
+}
+.sun{
+    background-image: url(treasure-map.png);
+    width: 250px;
+    height: 250px;
+ background-size: cover;
+transform: rotate(0deg);
+margin-bottom: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.choose{
+    width: 100%;
+    height: 100vh;
+background-image: url(loadmap.jpg);
+background-size: cover;
+    display: none;
+justify-content: center;
+align-items: center;
+}
+.center{
+    width: 60%;
+    height: 80%;
+    background-color: wheat;
+    border-radius: 20px;
+    display: flex;
+}
+.choosemap{
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+background-color: rgb(140, 91, 0);
+    align-items: center;
+}
+
+.avatar{
+    width: 26%;
+    height: 6%;
+    background-color: #fff;
+    border-radius: 10px;
+    background-color: wheat;
+}
+.rechoose{
+font-size: 80px;
+    width: 70px;
+    height: 70px;
+    margin-top: 250px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: wheat;
+background-size: cover;
+transition: .3s;
+}
+.skins{
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+ flex-direction: column;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+    border-radius: 5px;
+    background-color: wheat;
+}
+.name{
+    width: 60%;
+    height: 3%;
+    background-color: #fff;
+    border-radius: 5px;
+    background-color: wheat;
+}
+.inp1{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.a1{
+    width: 50px;
+    height: 50px;
+   background-image: url(1.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a2{
+    width: 50px;
+    height: 50px;
+    background-image: url(2.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a3{
+    width: 50px;
+    height: 50px;
+    background-image: url(pirate2.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a4{
+    width: 50px;
+    height: 50px;
+    background-image: url(pirate3.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a5{
+    width: 90px;
+    height: 90px;
+    background-image: url(pirate5.png);
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.a6{
+    width: 90px;
+    height: 90px;
+    background-image: url(pirate6.png);
+    border-radius: 50%;
+    cursor: pointer;
+    background-size: cover;
+}
+.a7{
+    width: 90px;
+    cursor: pointer;
+    height: 90px;
+    background-image: url(pirate1.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a8{
+    width: 90px;
+    cursor: pointer;
+    height: 90px;
+    background-image: url(pirate2.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a9{
+    width: 90px;
+    cursor: pointer;
+    height: 90px;
+    background-image: url(pirate3.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+.a10{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    background-image: url(pirate4.png);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.left{
+    width: 90%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(140, 91, 0);
+}
+.right{
+    width: 90%;
+    background-color: rgb(140, 91, 0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+#player11{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #6e5631;
+    scroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pirata One', cursive;
+    padding: 10px;
+    border: none;
+    background-color: wheat;
+}
+#player22{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #6e5631;
+    scroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pirata One', cursive;
+    padding: 10px;
+    border: none;
+    background-color: wheat;
+}
+#pl1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 38%;
+    background-size: cover;
+}
+#pl2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+left: 58%;
+background-size: cover;
+}
+#npl1{
+    font-family: 'Pirata One', cursive;
+color: black;
+margin-top: 45px;
+margin-left: 5px;
+}
+#npl2{
+    font-family: 'Pirata One', cursive;
+color: black;
+margin-top: 45px;
+margin-left: 5px;
+}
+.startbutton1{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+border-radius: 5px;
+border: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+cursor: pointer;
+}
+.startbutton2{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+border-radius: 5px;
+border: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+cursor: pointer;
+}

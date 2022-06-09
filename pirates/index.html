@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <div class="wrap" id="wrap">
+      
+      <div id="pl1"> <div id="npl1">Player1</div></div>
+      <div class="scoreContainer">
+          <div class="scoreInner" id="scoreInner1">0</div>
+          <div class="scoreInner" id="scoreInner2">0</div>
+      </div>
+       <div id="pl2"><div id="npl2">Player2</div></div>
+
+       <div class="target" id="target"></div>
+       
+        <div class="player player1" id="player1"></div>
+        <div class="player player2" id="player2"></div>
+        <div class="gamepad gamepad1" id="gamepad1">
+            <div class="row">
+                <div class="btn btn_top" id="btn_top1"></div>
+            </div>
+            <div class="center_row">
+                <div class="btn btn_left" id="btn_left1"></div>
+                <div class="btn btn_right" id="btn_right1"></div>
+            </div>
+            <div class="row">
+                <div class="btn btn_bottom" id="btn_bottom1"></div>
+            </div>
+        </div>
+        
+         <div class="gamepad gamepad2" id="gamepad2">
+            <div class="row">
+                <div class="btn btn_top" id="btn_top2"></div>
+            </div>
+            <div class="center_row">
+                <div class="btn btn_left" id="btn_left2"></div>
+                <div class="btn btn_right" id="btn_right2"></div>
+            </div>
+            <div class="row">
+                <div class="btn btn_bottom" id="btn_bottom2"></div>
+            </div>
+        </div>
+        
+        <div class="gamepadSwitcher" id="gamepadSwitcher"><img src="games.png" alt=""></div>
+    </div>
+
+<div class="load" id="load">
+    <div class="ship" id="ship"></div>
+    <div class="loading">
+<div class="wheel" id="wheel"></div>
+<div class="progress" id="progress"><div class="pers" id="pers"></div></div>
+    </div>
+</div>
+
+<div class="start" id="start">
+    <div class="sun">
+        <div class="tap" id="tap">START</div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="choose" id="choose">
+<div class="center">
+<div class="left">
+        <div class="avatar">
+<input type="text" id="player11" maxlength="7">
+        </div>
+<div class="skins">
+
+<div class="row1">
+<div class="a5" id="s1_1"></div>
+<div class="a6" id="s1_2"></div>
+
+</div>
+
+<div class="row2">
+    <div class="a7" id="s1_3"></div>
+    <div class="a8" id="s1_4"></div>
+
+    </div>
+
+    <div class="row3">
+        <div class="a9" id="s1_5"></div>
+        <div class="a10" id="s1_6"></div>
+</div>
+<button class="startbutton1" id="startbutton1">START</button>
+
+
+        </div>
+</div>
+
+<div class="choosemap">
+    <div class="rechoose" id="rechoose">↻</div>
+</div>
+
+
+<div class="right">
+    <div class="avatar">
+        <input type="text" id="player22" maxlength="7">
+                </div>
+        <div class="skins">
+        
+        <div class="row1">
+        <div class="a5" id="s2_1"></div>
+        <div class="a6" id="s2_2"></div>
+        
+        </div>
+        
+        <div class="row2">
+            <div class="a7" id="s2_3"></div>
+            <div class="a8" id="s2_4"></div>
+        
+            </div>
+        
+            <div class="row3">
+                <div class="a9" id="s2_5"></div>
+                <div class="a10" id="s2_6"></div>
+                
+        </div>
+        
+        <button class="startbutton2" id="startbutton2">START</button>
+
+</div>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
